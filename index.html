@@ -1,41 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EURO247</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EURO247 - Full Final</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <img src="assets/EURO247_logo_resized_for_website.png" alt="EURO247 Logo" class="logo">
-        <nav>
-            <button>SPORTS BETTING</button>
-            <button>LIVE BETTING</button>
-            <button>CASINO</button>
-            <button>LIVE CASINO</button>
-            <button>RACING</button>
-            <button>PROMOTIONS</button>
-        </nav>
-        <div class="auth-buttons">
-            <button class="login-btn">LOG IN</button>
-            <button class="signup-btn">SIGN UP</button>
-        </div>
-    </header>
 
-    <section class="slider">
-        <div class="slides">
-            <img src="slider_1.png" class="slide active">
-            <img src="slider_2.png" class="slide">
-            <img src="slider_3.png" class="slide">
-        </div>
-        <div class="slider-buttons">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
+<header class="header">
+  <div class="container header-inner">
+    <img src="assets/logo.png" alt="EURO247 Logo" class="logo" />
+    <nav class="nav-menu">
+      <a href="#">SPORTS BETTING</a>
+      <a href="#">LIVE BETTING</a>
+      <a href="#">CASINO</a>
+      <a href="#">LIVE CASINO</a>
+      <a href="#">PROMOTIONS</a>
+    </nav>
+    <div class="auth-buttons">
+      <button class="login">LOGIN</button>
+      <button class="signup">SIGN UP</button>
+    </div>
+  </div>
+</header>
 
-    <script src="js/main.js"></script>
+<section class="swiper main-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="assets/slider_1.png" alt="Slide 1" /></div>
+    <div class="swiper-slide"><img src="assets/slider_2.png" alt="Slide 2" /></div>
+  </div>
+</section>
+
+<section class="recommended">
+  <div class="container">
+    <h2>Recommended For You</h2>
+    <div class="game-grid">
+      <div class="game-card"><img src="assets/slot1.png" alt="Slot 1"/><p>PLINKO</p></div>
+      <div class="game-card"><img src="assets/slot2.png" alt="Slot 2"/><p>Sticky Coin</p></div>
+      <div class="game-card"><img src="assets/slot3.png" alt="Slot 3"/><p>Running Wins</p></div>
+      <div class="game-card"><img src="assets/slot4.png" alt="Slot 4"/><p>Book of Dragon</p></div>
+      <div class="game-card"><img src="assets/slot5.png" alt="Slot 5"/><p>Gates of Olympus</p></div>
+      <div class="game-card"><img src="assets/slot6.png" alt="Slot 6"/><p>Coin Win</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="odds">
+  <div class="container">
+    <h2>Boosted Odds</h2>
+    <div class="odds-box">
+      <p>Man City vs Arsenal — <span class="highlight">1.60</span> | 3.50 | 4.20</p>
+    </div>
+    <div class="odds-box">
+      <p>Napoli vs Milan — <span class="highlight">2.10</span> | 3.20 | 3.00</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 EURO247. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  new Swiper('.swiper', {
+    loop: true,
+    autoplay: { delay: 4000 },
+    effect: 'slide'
+  });
+</script>
+
 </body>
 </html>
